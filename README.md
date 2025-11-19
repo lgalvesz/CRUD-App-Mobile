@@ -1,20 +1,8 @@
-# 📋 Resumo Executivo - CRUD App Mobile
+# CRUD App Mobile
 
 ## 🎯 Visão Geral do Projeto
 
 Aplicação mobile completa desenvolvida em **Flutter** integrada com **API REST** em **Node.js** e banco de dados **MySQL**, implementando operações CRUD para gerenciamento de Clientes e Produtos.
-
----
-
-## 📊 Informações do Projeto
-
-| Item | Descrição |
-|------|-----------|
-| **Disciplina** | Desenvolvimento Mobile II |
-| **Instituição** | Unilavras |
-| **Professor** | Luccas Rafael |
-| **Data de Entrega** | 05/12/2025 |
-| **Pontuação Máxima** | 25 pontos |
 
 ---
 
@@ -331,25 +319,36 @@ flutter run
 
 ---
 
-## 🎯 Diferenciais do Projeto
-
-- ✅ Código limpo e bem documentado
-- ✅ Tratamento de erros robusto
-- ✅ Interface moderna e intuitiva
-- ✅ Validações completas
-- ✅ Feedback visual constante
-- ✅ Loading states
-- ✅ Estados vazios
-- ✅ Confirmações de ações
-- ✅ Formatação de dados (preço, data)
-- ✅ Preview de imagens
-
----
-
 ## 🏆 Conclusão
 
 Este projeto demonstra a implementação completa de uma aplicação mobile moderna integrada com backend, seguindo boas práticas de desenvolvimento, arquitetura em camadas, e princípios de design de software.
 
+## 👨‍💻 Desenvolvedores
+
+*Luís Gustavo*
+- GitHub: [@lgalvesz](https://github.com/lgalvesz)
+- LinkedIn: [Luís Gustavo](https://www.linkedin.com/in/luisgustavoalves/)
+- Email: luisgalvessilva@gmail.com
+
+*Kauã Carvalho*
+- Github: [@Kaua-Carvalho](https://github.com/Kaua-Carvalho)
+- Linkedin: [Kauã Ribeiro Carvalho](https://www.linkedin.com/in/kauã-ribeiro-carvalho/)
+- Email: kauarcarvalho@gmail.com
+
+*Stênio Siqueira*
+- Github: [@StenioSiq](https://github.com/StenioSiq)
+- Linkedin: [Stênio Siqueira](https://www.linkedin.com/in/stenio-siqueira/)
+- Email: steniosqr@gmail.com
+
+*Yago Henrique*
+- Github: [@YagoHT](https://github.com/YagoHT)
+- Linkedin: [Yago Henrique](https://www.linkedin.com/in/yago-henrique-toledo-del-pino-vieira/)
+- Email: yagoh686@gmail.com
+
 ---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
 
 **Desenvolvido para a disciplina de Desenvolvimento Mobile II**
