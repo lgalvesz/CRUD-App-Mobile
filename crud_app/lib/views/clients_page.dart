@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/client_provider.dart';
+import '../utils/image_helper.dart';
 import 'client_form_page.dart';
 
 class ClientsPage extends StatelessWidget {
@@ -106,23 +107,19 @@ class ClientsPage extends StatelessWidget {
                   leading: CircleAvatar(
                     radius: 25,
                     backgroundColor: Colors.blue.shade100,
-                    child: cliente.foto.isNotEmpty
-                        ? ClipOval(
-                            child: Image.network(
-                              cliente.foto,
-                              width: 50,
-                              height: 50,
-                              fit: BoxFit.cover,
-                              loadingBuilder: (context, child, loadingProgress) {
-                                if (loadingProgress == null) return child;
-                                return const CircularProgressIndicator(strokeWidth: 2);
-                              },
-                              errorBuilder: (context, error, stackTrace) {
-                                return Icon(Icons.person, color: Colors.blue.shade700, size: 30);
-                              },
-                            ),
-                          )
-                        : Icon(Icons.person, color: Colors.blue.shade700, size: 30),
+                    child: ClipOval(
+                      child: NetworkImageWidget(
+                        imageUrl: cliente.foto,
+                        width: 50,
+                        height: 50,
+                        fit: BoxFit.cover,
+                        errorWidget: Icon(
+                          Icons.person,
+                          color: Colors.blue.shade700,
+                          size: 30,
+                        ),
+                      ),
+                    ),
                   ),
                   title: Text(
                     cliente.nomeCompleto,

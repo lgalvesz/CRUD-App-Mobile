@@ -4,7 +4,7 @@ import 'client.dart';
 import 'client_dao.dart';
 
 class ClientDAOMySQL implements ClientDAO {
-  static const String baseUrl = 'http://192.168.0.99:3000/clientes';
+  static const String baseUrl = 'http://localhost:3000/clientes';
 
   @override
   Future<List<Client>> encontrar() async {

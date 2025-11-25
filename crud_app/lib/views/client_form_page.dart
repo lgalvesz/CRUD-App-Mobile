@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/client.dart';
 import '../providers/client_provider.dart';
+import '../utils/image_helper.dart';
 
 class ClientFormPage extends StatefulWidget {
   final Client? cliente;
@@ -153,27 +154,6 @@ class _ClientFormPageState extends State<ClientFormPage> {
                   return null;
                 },
               ),
-              const SizedBox(height: 24),
-              if (_fotoController.text.isNotEmpty)
-                Container(
-                  height: 150,
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey.shade300),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8),
-                    child: Image.network(
-                      _fotoController.text,
-                      fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) {
-                        return const Center(
-                          child: Icon(Icons.broken_image, size: 48),
-                        );
-                      },
-                    ),
-                  ),
-                ),
               const SizedBox(height: 24),
               ElevatedButton(
                 onPressed: _isLoading ? null : _salvar,

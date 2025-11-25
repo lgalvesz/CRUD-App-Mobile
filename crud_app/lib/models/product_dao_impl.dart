@@ -4,7 +4,7 @@ import 'product.dart';
 import 'product_dao.dart';
 
 class ProductDAOMySQL implements ProductDAO {
-  static const String baseUrl = 'http://192.168.0.99:3000/produtos';
+  static const String baseUrl = 'http://localhost:3000/produtos';
 
   @override
   Future<List<Product>> encontrar() async {
