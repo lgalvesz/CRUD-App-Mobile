@@ -15,14 +15,19 @@ class Product {
 
   // Converter de JSON para Product
   factory Product.fromJson(Map<String, dynamic> json) {
+    DateTime dataAtualizado = DateTime.now();
+    
+    if (json['data_atualizado'] != null) {
+      // Parse da data e ajusta para horário local
+      dataAtualizado = DateTime.parse(json['data_atualizado']).toLocal();
+    }
+    
     return Product(
       id: json['id'].toString(),
       nome: json['nome'] ?? '',
       descricao: json['descricao'] ?? '',
       preco: double.tryParse(json['preco'].toString()) ?? 0.0,
-      dataAtualizado: json['data_atualizado'] != null
-          ? DateTime.parse(json['data_atualizado'])
-          : DateTime.now(),
+      dataAtualizado: dataAtualizado,
     );
   }
 
